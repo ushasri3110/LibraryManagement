@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size:62.5%;
+}
+.background{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url(../images/Admin.jpg) center no-repeat;
+    background-size: cover;
+}
+.features-block{
+    position: fixed;
+    /* with the following 3 lines the black transparent box be in the middle of the page */
+    top: 0%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.5); /* Black with 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it appears above other content */
+    border-radius: 10px;
+}
+.feature{
+    cursor: pointer;
+    padding-left: 1rem;
+}
+.feature a{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.feature i {
+    font-size: 40px; /* Adjust the font size to change the icon's width and height */
+}
+
+/* Style the columns */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    width:200px;
+    height: 150px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Black with 50% opacity */
+    margin: 0 5px; /* Add margin to create space between columns */
+    outline: 2px solid rgb(32, 1, 1);
+}
+
+
+/* Style the buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+.column>a button{
+    margin-top: 25%;
+}
+
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    background-color: white;
+    height: 100vh;
+  }
+  
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    border-radius: 0;
+    mix-blend-mode: difference;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;  
+  }
+  
+  .circle {
+      position: absolute;
+      display: block;
+      width: 26px;
+      height: 26px;
+      border-radius: 20px;
+      background-color: #fff;
+  }
